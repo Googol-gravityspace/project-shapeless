@@ -15,7 +15,7 @@ devs = ['/dev/ram/'] ;'''Always being mounted. Unmount to halt bot activity.
                          send messages, read them, change your nickname, block
                          users, and other actions that terminal API covered.'''
 
-def usend(msg):
+def usend(msg): # In real code it's used only as a command from terminal
     # < ... >
     # progs.received(msg) # not implemented; will be useless here
     if msg=='BOTDISKS':
