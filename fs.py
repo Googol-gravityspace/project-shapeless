@@ -6,7 +6,7 @@ Shapeless bot for MsgRoom @ Windows96.net
 Shapeless bot © Diicorp95. MIT License
 Windows 96 © Mikesoft. All rights reserved, except for some parts
 
-Open-Source Part: File System API (excerpt)
+Open-Source Part: Functional Wrap for File System (excerpt)
 '''
 
 import os.path # not implemented
