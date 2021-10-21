@@ -17,9 +17,9 @@ config_storage_demo = [
     None,
     'SHAPELESS:CONFIG',
     'silent:MA==',# 0: Can send messages; 1: Don't return error code ('Learned', 'Error'..., etc.); 2: Completely silent. 'BOTGUESS', 'say(<<text>>)'' and similar commands will be useless.
-    'default_name:"=>|<="',# Default name.
-    'name_lasts:false',# If true, then bot always sets its nickname as in parameter 'name_default'. Default name can be set if user executes command 'BOTNAME-default'
-    'prefix:"]#[ "',# Prefix when copying name of a user (by their ID) or nickname
+    'default_name:PT58PD0=',# Default name.
+    'name_lasts:AA==',# If true, then bot always sets its nickname as in parameter 'name_default'. Default name can be set if user executes command 'BOTNAME-default'
+    'prefix:XSNbIA==',# Prefix when copying name of a user (by their ID) or nickname
 ] # example; do not use in real code
 
 def usend(msg): # In real code it's used only as a command from terminal
@@ -86,7 +86,7 @@ class cfg:
         for i,s in enumerate(con):
             if i > 0:
                 try:
-                    _.append(str(list(con.keys())[i])+'='+cfg.encode(str(s)))
+                    _.append(str(list(con.keys())[i])+':'+cfg.encode(str(s)))
                 except KeyError:
                     try:
                         sendterm("Could not access value of "+BC+list(con.keys())[i]+NC,'config')
