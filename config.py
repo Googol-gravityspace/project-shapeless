@@ -10,6 +10,7 @@ Open-Source Part: Configuration API
 '''
 
 import base64 # not implemented
+import os.path # not implemented
 
 global con,config_storage_demo
 con={}
@@ -37,7 +38,7 @@ def usend(msg): # In real code it's used only as a command from terminal
 class cfg:
     MAGIC_STRING = 'SHAPELESS:CONFIG'
     term = {'homedisk': '/dev/dsk1/'} # not implemented
-    default_config_location = term['homedisk']+"/shapeless.config"
+    default_config_location = os.path.join(term['homedisk'],"/shapeless.config")
 
     def edit(variable, value, system = False):
         if not system:
