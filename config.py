@@ -66,7 +66,9 @@ class cfg:
             #absolute_path = cfg.default_config_location
     def restore(system = False):
         sendmsg('...')
-        #if fs.readlines(cfg.default_config_location,_) < 1: # example; do not comment this line in real code
+        #x = fs.readlines(cfg.default_config_location,_) # example; do not comment this line in real code
+        #if isinstance(x,int) and x < 1: # example; do not comment this line in real code
+            #return 1 # example; do not comment this line in real code
         _ = config_storage_demo # example; do not use in real code
         if _[0] > 15:
             if _[1] == cfg.MAGIC_STRING:
