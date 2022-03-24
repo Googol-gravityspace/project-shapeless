@@ -112,5 +112,5 @@ if __name__=="__main__": # demo
         config_storage_demo[0] += len(str(s)) # example; do not use in real code
     config_storage_demo[0] += len(config_storage_demo) # example; do not use in real code
     cfg.restore(True) # demo
-    usend('BOTCON name_lasts=true') # demo
+    usend('BOTCON name_lasts=false') # demo
     usend('BOTSAVECON') # demo
