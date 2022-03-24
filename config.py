@@ -18,7 +18,7 @@ config_storage_demo = [
     None,
     'SHAPELESS:CONFIG',
     'silent:MA==',# 0: Can send messages; 1: Don't return error code ('Learned', 'Error'..., etc.); 2: Completely silent. 'BOTGUESS', 'say(<<text>>)'' and similar commands will be useless.
-    'default_name:PT58PD0=',# Default name.
+    'default_name:=>|<=',# Default name.
     'name_lasts:AA==',# If true, then bot always sets its nickname as in parameter 'name_default'. Default name can be set if user executes command 'BOTNAME-default'
     'prefix:XSNbIA==',# Prefix when copying name of a user (by their ID) or nickname
 ] # example; do not use in real code
@@ -112,5 +112,5 @@ if __name__=="__main__": # demo
         config_storage_demo[0] += len(str(s)) # example; do not use in real code
     config_storage_demo[0] += len(config_storage_demo) # example; do not use in real code
     cfg.restore(True) # demo
-    usend('BOTCON name_lasts=true') # demo
+    usend('BOTCON name_lasts=false') # demo
     usend('BOTSAVECON') # demo
